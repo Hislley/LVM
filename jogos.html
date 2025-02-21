@@ -85,11 +85,17 @@
             </div>
 
             <div class="membro">
-                <img src="foto3.jpg" alt="Foto do membro 3">
-                <h3>Nome do Membro 3</h3>
-                <p>Cargo: Gerente de Projetos</p>
-                <p>Descrição: [Breve descrição sobre o membro]</p>
-            </div>
+                <img src="sudoku.jpeg" alt="Foto do membro 2">
+                <h3><a href="https://www.sudokuonline.io/pt/?gad_source=1&gclid=EAIaIQobChMIzNC7sp2xiQMVZUFIAB3ouwhHEAAYASAAEgIbZfD_BwE" 
+                    target="_blank">nome do jogo</a></h3>
+                    <button class="game-button" onclick="toggleGame('game3')">Jogue Aqui!</button>
+        
+                    <div id="game3" class="game-container">
+                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://www.sudokuonline.io/pt/" target="_blank">Clique aqui</a> se não carregar.</p>
+                        <iframe src="https://www.sudokuonline.io/pt/"></iframe>
+                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game3')">⛶ Tela Cheia</button>
+                        <button class="close-button" onclick="toggleGame('game3')">Fechar Jogo</button>
+                    </div>  
            
            
            
