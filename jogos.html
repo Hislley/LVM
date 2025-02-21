@@ -1,0 +1,133 @@
+<html>
+    <html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Laboratório Virtual de Matemática</title>
+    <link rel="stylesheet" href="lab.css"><link rel="stylesheet" href="equipe css.css">
+</head>
+<body>
+    <div class="imagem">
+        <img src="3 juntas m.png" alt="Imagem Acima do Cabeçalho">
+    </div>
+    
+    <header>
+      <!-- Título e Subtítulo -->
+        <div>
+     <h1>Laboratório Virtual</h1>
+     <h1>de Matemática</h1>
+            <p>LVM do CETI Baurélio Mangabeira</p>
+        </div>
+    
+    </header>
+    <nav>
+        <a href="Lab Prog.html">Inicio</a>
+        <a href="equipe html.html">Equipe</a>
+        <a href="jogos.html">Jogos</a>
+        <a href="#Grupo 1">Práticos</a>
+        <a href="#Grupo 1">Grupo 3</a>
+        <a href="#Grupo 1">Grupo 4</a>
+        <a href="#Grupo 1">Grupo 5</a>
+     
+    </nav>
+
+<head>
+    <title>Nossa Equipe</title>
+    <body>
+        <h1>Jogos matemáticos</h1>
+        <section id="jogos">
+            <div class="membro">
+                <img src="torre de hanoi.png" alt="Foto do jogo 1">
+                <h3><a href="https://clubes.obmep.org.br/blog/torre-de-hanoi/" target="_blank">Torre de Hanói</a></h3>
+                <button class="game-button" onclick="toggleGame('game1')">Jogue Aqui!</button>
+        
+                <div id="game1" class="game-container">
+                    <iframe src="https://www.geogebra.org/material/iframe/id/s5hd5qum/border/none/srgb/true"></iframe>
+                    <button class="fullscreen-btn" onclick="abrirTelaCheia('game1')">⛶ Tela Cheia</button>
+                    <button class="close-button" onclick="toggleGame('game1')">Fechar Jogo</button>
+                </div>
+                <p>Pode ser usado para abordar Função Exponencial e Progressão Geométrica.</p>
+            </div>
+        
+            <div class="membro">
+                <img src="batalha naval.jpg" alt="Foto do jogo 2">
+                <h3><a href="https://papergames.io/pt-br/batalha-naval" target="_blank">Batalha Naval</a></h3>
+                <button class="game-button" onclick="toggleGame('game2')">Jogue Aqui!</button>
+        
+                <div id="game2" class="game-container">
+                    <iframe src="https://papergames.io/pt-br/batalha-naval"></iframe>
+                    <button class="fullscreen-btn" onclick="abrirTelaCheia('game2')">⛶ Tela Cheia</button>
+                    <button class="close-button" onclick="toggleGame('game2')">Fechar Jogo</button>
+                </div>
+                <p>Pode ser usado para trabalhar o plano cartesiano.</p>
+            </div>
+
+
+            <div class="membro">
+                <img src="sudoku.jpeg" alt="Foto do membro 2">
+                <h3><a href="https://www.sudokuonline.io/pt/?gad_source=1&gclid=EAIaIQobChMIzNC7sp2xiQMVZUFIAB3ouwhHEAAYASAAEgIbZfD_BwE" 
+                    target="_blank">Sudoku</a></h3>
+                    <button class="game-button" onclick="toggleGame('game3')">Jogue Aqui!</button>
+        
+                    <div id="game3" class="game-container">
+                        <p>Seu navegador pode bloquear a exibição do jogo. <a href="https://www.sudokuonline.io/pt/" target="_blank">Clique aqui</a> se não carregar.</p>
+                        <iframe src="https://www.sudokuonline.io/pt/"></iframe>
+                        <button class="fullscreen-btn" onclick="abrirTelaCheia('game3')">⛶ Tela Cheia</button>
+                        <button class="close-button" onclick="toggleGame('game3')">Fechar Jogo</button>
+                    </div>  
+                
+                <p>Pode Ser usado para trabalhar raciocínio lógico-matemático.</p>
+                <p>Descrição: É um famoso desafio de lógica em que a pessoa jogadora deve distribuir números,
+                    letras ou figuras nos espaços em branco no tabuleiro. A finalidade do jogo é preencher as células vazias, 
+                    com um número em cada célula, de forma que cada coluna, linha e região contenham os números 1-9 
+                    apenas uma vez.</p>
+            </div>
+
+            <div class="membro">
+                <img src="foto3.jpg" alt="Foto do membro 3">
+                <h3>Nome do Membro 3</h3>
+                <p>Cargo: Gerente de Projetos</p>
+                <p>Descrição: [Breve descrição sobre o membro]</p>
+            </div>
+           
+           
+           
+           
+            <div class="membro">
+                <img src="foto4.jpg" alt="Foto do membro 4">
+                <h3>Nome do Membro 4</h3>
+                <p>Cargo: Analista</p>
+                <p>Descrição: [Breve descrição sobre o membro]</p>
+            </div>
+
+
+            <div class="membro">
+                <img src="foto5.jpg" alt="Foto do membro 5">
+                <h3>Nome do Membro 5</h3>
+                <p>Cargo: Analista</p>
+                <p>Descrição: [Breve descrição sobre o membro]</p>
+            </div>
+
+        </section>
+        <script>
+            function toggleGame(id) {
+                let game = document.getElementById(id);
+                game.style.display = game.style.display === "none" || game.style.display === "" ? "block" : "none";
+            }
+        
+            function abrirTelaCheia(id) {
+                let iframe = document.querySelector(`#${id} iframe`);
+                if (iframe.requestFullscreen) iframe.requestFullscreen();
+                else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
+                else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+                else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+            }
+        </script>
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 Laboratório Virtual de Matemática do CETI Baurléio Mangabeira. Todos os direitos reservados.</p>
+        </footer>
+    </body>
+</html>

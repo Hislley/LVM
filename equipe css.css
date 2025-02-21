@@ -1,0 +1,47 @@
+/*EQUIPE css*/
+#equipe {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+}
+#equipe .row {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: auto;
+    
+}
+
+.membro {
+    text-align: center;
+    margin: 20px;
+    border: 2px solid #c10404;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.membro img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.membro h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.membro p {
+    margin: 5px 0;
+    color: #555;
+    font-size: 14px;
+}

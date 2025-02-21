@@ -1,0 +1,166 @@
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Centraliza a imagem, ajusta seu tamanho e adiciona cor de fundo */
+        .imagem {
+        background-color: #f0f0f0;  /* Cor de fundo da área da imagem */
+        padding: 5px;  /* Adiciona um espaço ao redor da imagem */
+        }
+      
+        /* Centraliza a imagem */
+        .imagem img {
+            display: block;
+            margin: 0 auto;
+            width: 80%; /* Ajuste a largura para 80% do tamanho original */
+            height: auto; /* Mantém a proporção da imagem */  
+        }
+        header {
+            display: center;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            color: rgb(0, 0, 0);
+            padding: 5px;
+            text-align: center;
+	    margin-bottom: 20px; /* Espaço abaixo do header */
+
+        }
+     
+	header h1 {
+            font-size: 100px;
+            margin: 20px;
+            flex-grow: 0; /* Expande o espaço do texto central */
+            text-align: center;
+            line-height: 1;
+        }
+        header p {
+            font-size: 30px;
+            flex-grow: 1; /* Expande o espaço do texto central */
+        }
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 18px 16px;
+            text-decoration: none;
+            font-size: 20px;
+        }
+        nav a:hover {
+            background-color: #0ec711;
+            color: rgb(255, 255, 255);
+            font-size: 30px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: vh;
+            padding: 0px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        .content {
+            flex: 1;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid #c10404;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(19, 177, 127, 0.1);
+            margin: 20px ;
+        }
+        .content h2 {
+            color: #333;
+            font-size: 35px;
+        }
+        .content p {
+                color: #333;
+                font-size: 20px;
+                text-align: justify
+                
+        }
+        .activity-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .activity-list li {
+            background-color: #fff;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: auto;
+            bottom: 0;
+            width: 100%;
+        }
+        
+        .game-button {
+            cursor: pointer;
+            color: white;
+            background-color: rgb(4, 225, 85);
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s;
+        }
+        .game-button:hover {
+            background-color: rgb(2, 131, 53);
+        }
+        .game-container {
+            position: relative;
+            display: none;
+            width: 80%;
+        }
+    
+        .game-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+    
+        .fullscreen-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: black;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+
+        .close-button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            font-size: 16px;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s;
+        }
+        .close-button:hover {
+            background-color: darkred;
+        }
+
+        #jogos{
+            width: 80%;
+        }
