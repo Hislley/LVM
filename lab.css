@@ -3,6 +3,8 @@
             font-family: 'Times New Roman', Times, serif;
             margin: 0;
             padding: 0;
+            overflow-x: hidden; /* Impede rolagem horizontal */
+            width: 100%; /* Garante que o body ocupe toda a largura da tela */
         }
 
         /* Centraliza a imagem, ajusta seu tamanho e adiciona cor de fundo */
@@ -15,7 +17,7 @@
         .imagem img {
             display: block;
             margin: 0 auto;
-            width: 80%; /* Ajuste a largura para 80% do tamanho original */
+            max-width: 80%; /* Ajuste a largura para 80% do tamanho original */
             height: auto; /* Mantém a proporção da imagem */  
         }
         header {
@@ -40,6 +42,7 @@
         header p {
             font-size: 30px;
             flex-grow: 1; /* Expande o espaço do texto central */
+            text-align: center;
         }
         nav {
             background-color: #333;
@@ -127,12 +130,16 @@
             position: relative;
             display: none;
             width: 80%;
+            margin: 0 auto; /* Centraliza horizontalmente */
+            text-align: center; /* Garante que elementos inline fiquem centralizados */
         }
-    
+        
         .game-container iframe {
             width: 100%;
             height: 500px;
             border: none;
+            display: block; /* Remove espaço extra abaixo do iframe */
+            margin: 0 auto; /* Centraliza o iframe */
         }
     
         .fullscreen-btn {
@@ -162,5 +169,5 @@
         }
 
         #jogos{
-            width: 80%;
+            width: 100%;
         }
