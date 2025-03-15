@@ -38,17 +38,38 @@
         <h1>Atividades práticas para estudos de determinados assuntos.</h1>
         <section id="praticos">
             <div class="membro">
-                <img src="torre de hanoi.png" alt="Foto do jogo 1">
-                <h3><a href="https://clubes.obmep.org.br/blog/torre-de-hanoi/" target="_blank">Torre de Hanói</a></h3>
-                <button class="game-button" onclick="toggleGame('game1')">Jogue Aqui!</button>
+                <img src="sierpinski.png" alt="Foto praticos1">
+                <h3>Triângulo de Sierpinski</a></h3>
+                <button class="game-button" onclick="toggleGame('praticos1')">Ver Aqui!</button>
         
-                <div id="game1" class="game-container">
-                    <iframe src="https://www.geogebra.org/material/iframe/id/s5hd5qum/border/none/srgb/true"></iframe>
-                    <button class="fullscreen-btn" onclick="abrirTelaCheia('game1')">⛶ Tela Cheia</button>
-                    <button class="close-button" onclick="toggleGame('game1')">Fechar Jogo</button>
+                <div id="praticos1" class="game-container">
+                    <p>Seu navegador pode bloquear a exibição.
+                        <a href="https://pt.mathigon.org/course/fractals/sierpinski" target="_blank">Clique aqui</a> se não abrir.</p>
+                    <iframe src="https://pt.mathigon.org/course/fractals/sierpinski "></iframe>
+                    <button class="fullscreen-btn" onclick="abrirTelaCheia('praticos1')">⛶ Tela Cheia</button>
+                    <button class="close-button" onclick="toggleGame('praticos1')">Fechar</button>
                 </div>
-                <p>Pode ser usado para abordar Função Exponencial e Progressão Geométrica.</p>
+                <p>Pode ser usado para abordar contagem, fração, área, perímetro, razão e proporção.</p>
             </div>
+        
+        
+        </section>
+        <script>
+            function toggleGame(id) {
+                let game = document.getElementById(id);
+                game.style.display = game.style.display === "none" || game.style.display === "" ? "block" : "none";
+            }
+        
+            function abrirTelaCheia(id) {
+                let iframe = document.querySelector(`#${id} iframe`);
+                if (iframe.requestFullscreen) iframe.requestFullscreen();
+                else if (iframe.mozRequestFullScreen) iframe.mozRequestFullScreen();
+                else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+                else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+            }
+        </script>
+            </div>
+        </section>
 
 
 
