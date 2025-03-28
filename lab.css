@@ -57,6 +57,10 @@
             text-decoration: none;
             font-size: 20px;
         }
+        h1 {
+            text-align: center;
+        }
+        
         nav a:hover {
             background-color: #0ec711;
             color: rgb(255, 255, 255);
