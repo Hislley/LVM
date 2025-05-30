@@ -7,6 +7,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Laboratório Virtual de Matemática</title>
     <link rel="stylesheet" href="lab.css">
+
+
+
+    
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0d6efd">
+    <link rel="icon" href="icon-192.png">
+    
+    <script>
+      if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('service-worker.js')
+          .then(() => console.log("Service Worker registrado com sucesso."))
+          .catch(err => console.error("Erro no Service Worker:", err));
+      }
+    </script>
+    
+
+
+
 </head>
 <body>
     <div class="imagem">
